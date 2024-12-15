@@ -54,7 +54,10 @@ To address spoofing:
 - **Python**
 - **Kotlin**
 - **JavaScript**
+- **Rust**
 - Additional tools and frameworks as needed.
-
+## Phase wise Plan
+# Phase 1
+* Create Chunkify: A program which breaks a large file into small chunks and modifies them as per need of Limen *
 ---
 
