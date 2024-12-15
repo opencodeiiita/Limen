@@ -1,5 +1,5 @@
 
-![Offline DRM logo]("limen logo.png")
+![Offline DRM logo](limen_logo.png)
 
 # Limen: The Offline DRM
 
