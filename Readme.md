@@ -1,3 +1,6 @@
+
+![Offline DRM logo](logo.png)
+
 # Limen: The Offline DRM
 
 ## What is DRM?
