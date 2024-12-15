@@ -1,5 +1,7 @@
 
-![Offline DRM logo](limen_logo.png)
+
+![Offline DRM logo](Limen_Logo.png)
+
 
 # Limen: The Offline DRM
 
