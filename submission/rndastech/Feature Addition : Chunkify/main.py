@@ -2,7 +2,7 @@ import os
 import math
 import logging
 from pathlib import Path
-
+import argparse
 
 class Chunkify:
     def __init__(self, chunk_size_mb=10):
@@ -67,16 +67,27 @@ class Chunkify:
             self.logger.error(f"Chunkify failed: {e}")
             raise
 
-
 def main():
-    chunkifier = Chunkify(chunk_size_mb=10)
+    parser = argparse.ArgumentParser(description="Split a file into smaller chunks.")
+    parser.add_argument(
+        "input_file_path",
+        type=str,
+        help="Path to the input file that needs to be chunkified."
+    )
+    parser.add_argument(
+        "--chunk_size_mb",
+        type=int,
+        default=10,
+        help="Size of each chunk in MB (default: 10 MB)."
+    )
+    args = parser.parse_args()
+
+    chunkifier = Chunkify(chunk_size_mb=args.chunk_size_mb)
     try:
-        input_file_path = 'rnd.txt'
-        chunks = chunkifier.chunkify(input_file_path)
+        chunks = chunkifier.chunkify(args.input_file_path)
         print(f"Chunks created at: {chunks}")
     except Exception as e:
         print(f"Error: {e}")
-
 
 if __name__ == "__main__":
     main()
