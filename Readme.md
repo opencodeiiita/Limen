@@ -1,3 +1,8 @@
+
+
+![Offline DRM logo](Limen_Logo.png)
+
+
 # Limen: The Offline DRM
 
 ## What is DRM?
@@ -54,7 +59,17 @@ To address spoofing:
 - **Python**
 - **Kotlin**
 - **JavaScript**
+- **Rust**
 - Additional tools and frameworks as needed.
-
+## Phase wise Plan
+# Phase 1
+* Create Chunkify: A program which breaks a large file into small chunks and modifies them as per need of Limen *
 ---
 
+## PR Template 📝
+When submitting a pull request, use the following template:
+```markdown
+Issue: #<ISSUENUMBER>
+
+Make sure to add all the required items (e.g., code, screenshots, GIFs, etc.) as specified in the issue.
+```
