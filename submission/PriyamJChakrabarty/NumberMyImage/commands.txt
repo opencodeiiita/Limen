@@ -1,0 +1,14 @@
+## Install
+
+pip install pillow
+
+
+
+
+python main.py img.png --output.txt
+
+or
+
+python main.py img.png 
+
+//(Prints in the command line)
