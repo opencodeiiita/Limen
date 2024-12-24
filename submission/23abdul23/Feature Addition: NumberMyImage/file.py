@@ -79,7 +79,7 @@ def NumMyImg():
     newdata = np.floor(data/ 128)
     
     #If want to save the bmp image, code is written below
-    #cv2.imwrite("out.png",( newdata)*255 )
+    cv2.imwrite("out.png",( newdata)*255 )
     
     
     newdata = newdata.astype(int)
