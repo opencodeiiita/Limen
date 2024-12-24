@@ -3,6 +3,13 @@ import sys
 import numpy as np
 import base64, cv2
 
+
+def usage():
+     print("\n")
+     print("---------------------------------------------------------")
+     print("         file.py image_path output_file.txt")
+     print("---------------------------------------------------------")
+
 def binary_to_int(binary):
     #converting binary to integer
     integer, i = 0, 0
@@ -31,10 +38,12 @@ def NumMyImg():
     #checks if the provided input file is some kind of image or not
     if (i_file[-3:] not in ["jpg","png","bmp"]):
         print("Correct Image File is not provided...")
+        usage()
         return
     
     if o_file[-4:] != ".txt":
          print("Output file is not valid, Give a .txt file")
+         usage()
          return
     
     #tries to open the given image file if provided correctly, checks if it is present or not
@@ -52,6 +61,7 @@ def NumMyImg():
 
     except FileNotFoundError:
         print("File is not Found, please enter correct image_path")
+        usage()
         return
 
 
