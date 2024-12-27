@@ -1,0 +1,6 @@
+to import pillow module:   
+pip install pillow 
+in powershell 
+
+to execute main.py:
+python main.py --output [output file name.txt] [input file path]
